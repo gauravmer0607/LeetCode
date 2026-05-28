@@ -4,7 +4,7 @@ public:
         int n=nums.size();
         int left=0,right=0;
         double sum=0;
-        double maxavg=0.0;
+        double maxavg=-DBL_MAX;
         while(right<n){
             sum+=nums[right];
             while((right-left+1)==k){
